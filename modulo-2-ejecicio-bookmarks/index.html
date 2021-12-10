@@ -33,7 +33,7 @@
         </nav>
         <h1 class="header__title">Ada-bookmarks</h1>
       </header>
-      <form class="menudropdown collapsed">
+      <form class="menudropdown collapsed js-menudropdown">
         <fieldset class="menu__data-search">
           <h2 class="menu__title">Búsqueda</h2>
           <label class="data-search__epigraph" for="search_desc"
@@ -109,18 +109,18 @@
       </form>
       <main class="main">
         <h2>Lista de enlaces</h2>
-        <section class="data tableview">
+        <section class="data tableview listview ">
           <div class="data__header">
             <div>URL</div>
             <div>Leída</div>
             <div>Despcripción</div>
             <div>Etiquetas</div>
           </div>
-          <ul class="data__list">
-            sdfkasñdjlfjsañldkfjsad
-          </ul>
+
+          <ul class="data__list js_datalist"></ul>
+
           <div class="data__actions">
-            <section class="data-actions__add hidden">
+            <section class="data-actions__add hidden js-data-actions">
               <button
                 class="data-actions__button-add"
                 title="Crear un nuevo bookmark"
