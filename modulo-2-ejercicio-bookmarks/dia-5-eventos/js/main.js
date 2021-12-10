@@ -43,41 +43,12 @@ const DataBookmarks = {
 
 
 
-/*const bmk_1_url = 'https://books.adalab.es/materiales-del-curso-n/-MdR6Gp68BX20m1pi0z2/modulo-2-programando-la-web/javascript/2_1_intro_a_la_programacion';
-const bmk_1_desc = 'JS en los materiales de Adalab';
-const bmk_1_seen = 'checked title="Enlace leído"';
-const bmk_1_tags_1 = 'javascript';
-const bmk_1_tags_2 = '';
 
-const bmk_2_url = 'https://thesmartcoder.dev/9-awesome-projects-you-can-build-with-vanilla-javascript/';
-const bmk_2_desc = 'Ideas de proyectos JS';
-const bmk_2_seen = 'checked title="Enlace leído"';
-const bmk_2_tags_1 = '';
-const bmk_2_tags_2 = '';
-
-const bmk_3_url = 'https://books.adalab.es/materiales-del-curso-n/-MdR6Gp68BX20m1pi0z2/modulo-1-html-y-css/1_1_intro_a_la_web';
-const bmk_3_desc = 'HTML en los materiales de Adalab';
-const bmk_3_seen = 'title="Por leer"';
-const bmk_3_tags_1 = 'html';
-const bmk_3_tags_2 = 'css';
-
-// Nota: Uso _ en los nombres, pero por una razón académica
-// En JS se suele usar la notación camelCase para los identificadores
-// (identificador = nombre de variable)*/
-
-/*                        Sección de funciones                         */
-/*  -----------------------------------------------------------------  */
-
-// Día 4: Funciones que generan el HTML de cada bookmark
-
-/**
- * Genera un código HTML para representar la lista de etiquetas de un bookmark,
- * teniendo en cuenta que alguna etiqueta (o las dos) puede estar vacía.
  *
- * @param {string} tags_1 Nombre de la primera etiqueta de un bookmark
- * @param {string} tags_2 Nombre de la segunda etiqueta de un bookmark
- * @returns Un String con el HTML de la lista de etiquetas
- */
+ * @param { string } tags_1 Nombre de la primera etiqueta de un bookmark
+  * @param { string } tags_2 Nombre de la segunda etiqueta de un bookmark
+    * @returns Un String con el HTML de la lista de etiquetas
+      * /
 
 function renderTags(tags_1, tags_2) {
   let htmlTags = `
@@ -110,7 +81,7 @@ function renderTags(tags_1, tags_2) {
  * @param {String} tags_2 Segunda etiqueta
  * @returns Un String con el código HTML que representa el bookmark.
  */
-
+//Aquí hemos añadido nuestro objeto
 function renderBookmark(DataBookmarks) {
   const htmlTags = renderTags(DataBookmarks.bmkData_1.tags_1, DataBookmarks.bmkData_1.tags_2);
 
@@ -139,7 +110,7 @@ function renderBookmark(DataBookmarks) {
 // bookmark correspondiente.
 // El HTML que van generando, lo acumulamos en la variable html.
 
-
+//Aquí hemos añadido TAMBIÉN nuestro objeto
 
 let html = renderBookmark(
   DataBookmarks
